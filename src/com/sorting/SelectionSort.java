@@ -13,13 +13,27 @@
  *  Output: Sorted numbers using Selection Sort
  *----------------------------------------------------------------*/
 package com.sorting;
+import java.util.*;
 
 public class SelectionSort
 {
-
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the size of array");
+		int sizeOfArray = input.nextInt();
+		System.out.println("Lets start entering array of numbers...");
+		int[] numbers = new int[sizeOfArray];
+		for(int i=0; i<sizeOfArray; i++)
+		{
+			System.out.println("Please enter " + (i+1) + "th number");
+			numbers[i] = input.nextInt();
+		}
+		
+		for(int j = 0; j < sizeOfArray; j++)
+		{
+			System.out.println(numbers[j]);
+		}
 
 	}
 
