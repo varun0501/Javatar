@@ -26,6 +26,8 @@ public class SelectionSort
 		{
 			System.out.print(numbers[j] + " ");
 		}
+		
+		input.close();
 
 	}
 	/**
